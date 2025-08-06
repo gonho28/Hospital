@@ -45,14 +45,15 @@ values(1, 3, 8),
 (7, 6, 3);
 
 INSERT INTO Médicos
-values(0001, 14889221132, 'Gabriel Freire de Lima', 56, 'Cuitegi', 'Endocrinologista', 7),
-(0002, 14299394593, 'Kamyla Felix da SIlva', 43, 'Araçagi', 'Odontologista', 2),
+VALUES
+(0001, 14889221132, 'Gabriel Freire de Lima', 56, 'Cuitegi', 'Oncologista', 7),
+(0002, 14299394593, 'Kamyla Felix da Silva', 43, 'Araçagi', 'Odontologista', 2),
 (0003, 11183402945, 'José de Sousa Barros', 45, 'Chicago', 'Infectologista', 10),
-(0004, 99284738323, 'Daniel da Silva Goncalves', 77, 'Guarabira', 'Neurocirurgião', 9),
-(0005, 28393925134, 'Pedro Gabriel Ernesto da Silva', 93, 'Cracóvia', 'Otorrinolaringologista', 6),
-(0006, 82391122392, 'Jordan Terrell Carter', 29, 'Atlanta', 'Ginecologista', 8),
-(0007, 82363429582, 'Mauro Davi dos Santos Nepomuceno', 25, 'Rio de Janeiro', 'Otorrinolaringologista', 1),
-(0008, 83824581309, 'Kanye Omari West', 48, 'Atlanta', 'Dermatologista', 3);
+(0004, 99284738323, 'Daniel da Silva Goncalves', 77, 'Guarabira', 'Infectologista', 9),
+(0005, 28393925134, 'Pedro Gabriel Ernesto da Silva', 93, 'Cracóvia', 'Neurologista', 6),
+(0006, 82391122392, 'Jordan Terrell Carter', 29, 'Atlanta', 'Dermatologista', 8),
+(0007, 82363429582, 'Mauro Davi dos Santos Nepomuceno', 25, 'Rio de Janeiro', 'Infectologista', 1),
+(0008, 83824581309, 'Kanye Omari West', 48, 'Atlanta', 'Infectologista', 3);
 
 INSERT INTO Pacientes
 values(0011, 12093583232, 'Iago Saraiva Meireles Avelino Estevão', 17, 'Guarabira', 'Câncer de Pulmão'),

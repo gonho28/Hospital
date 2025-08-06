@@ -96,6 +96,6 @@ VALUES
  CREATE VIEW PACIENTES_INFO as
  select p.idade, p.doença, m.nome, a.nroa
  from Consultas c 
- join Pacientes p on p.codp = c.codm
+ join Pacientes p on p.codp = c.codp
  join Médicos m on m.codm = c.codm
  join Ambulatórios a on a.nroa = m.nroa;

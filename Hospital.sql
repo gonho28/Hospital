@@ -75,3 +75,27 @@ VALUES
 (0006, 0066, '2023-04-18','02:09:18'),
 (0007, 0077, '2020-10-30','03:00:00'),
 (0008, 0088, '2024-02-22','09:07:00');
+
+ CREATE VIEW HORA_MÉDICO as 
+ select m.nome as "Nome do Médico", p.nome as "Nome do Paciente", c.hora 
+ from Consultas c
+ join Médicos m on m.codm = c.codm
+ join Pacientes p on p.codp = c.codp;
+ 
+ CREATE VIEW MEDICO_INFO as 
+ select c.hora, a.nroa, m.nome
+ from Consultas c 
+ join Médicos m on m.codm = c.codm
+ join Ambulatórios a on a.nroa = m.nroa;
+ 
+ CREATE VIEW MÉDICOS_NOME as
+ select m.nome, c.data, c.hora
+ from Consultas c 
+ right join Médicos m on m.codm = c.codm;
+ 
+ CREATE VIEW PACIENTES_INFO as
+ select p.idade, p.doença, m.nome, a.nroa
+ from Consultas c 
+ join Pacientes p on p.codp = c.codm
+ join Médicos m on m.codm = c.codm
+ join Ambulatórios a on a.nroa = m.nroa;
